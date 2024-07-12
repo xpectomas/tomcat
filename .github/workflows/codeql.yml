@@ -58,7 +58,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        ref: '9.0.34'
+        ref: '8.0.36'
         fetch-depth: 0
 
     # Initializes the CodeQL tools for scanning.
@@ -70,7 +70,7 @@ jobs:
         config: |
           disable-default-queries: true
           queries:
-          - uses: ./CVE-2016-3427.ql
+          - uses: security-extended
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
