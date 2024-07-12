@@ -58,7 +58,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        ref: '8.0.36'
+        ref: '8.5.6'
         fetch-depth: 0
 
     # Initializes the CodeQL tools for scanning.
