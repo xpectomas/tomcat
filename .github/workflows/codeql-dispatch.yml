@@ -58,7 +58,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        ref: ${{ github.event.inputs.tag }}
+        ref: '1.0.0-M4'
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
