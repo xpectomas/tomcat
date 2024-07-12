@@ -60,7 +60,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        ref: '1.0.0-M4'
+        ref: '10.0.0-M4'
         fetch-depth: 0
 
     # Initializes the CodeQL tools for scanning.
