@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL"
+name: "CodeQL-Tag"
 
 on:
   workflow_dispatch:
@@ -57,6 +57,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.inputs.tag }}
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
